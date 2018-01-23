@@ -1,0 +1,77 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*公共代码*/
+* {
+    margin: 0;
+    padding: 0
+}
+
+
+body, input, button, textarea, select, option, optgroup {
+    font: 14px/1.5 "Microsoft Yahei", "Hiragino Sans GB", sans-serif;
+    line-height: 20px;
+    color: #666;
+    background-color: #F5F5F5;
+    margin: 0;
+    padding: 0
+}
+
+div {
+    margin: 0 auto;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, ul, li, dl, dt, dd, form, img, p {
+    margin: 0;
+    padding: 0;
+    border: none;
+    list-style-type: none;
+}
+
+body {
+    position: relative;
+}
+
+h1, .hgroup h2, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+}
+
+ul, li {
+    list-style: none;
+}
+
+button, input {
+    line-height: normal;
+    outline: none;
+    border: 0;
+}
+
+a, a:hover {
+    text-decoration: none;
+    cursor: pointer;
+    color: #FFF;
+}
+
+
+
+h2 {
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 25px;
+    line-height: 25px;
+    font-weight: normal;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 100px;
+}
+
+
+
+
+
+

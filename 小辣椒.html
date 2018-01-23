@@ -1,0 +1,3102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>小辣椒手机官网商城-小辣椒手机、红辣椒手机、双卡双待双4G指纹手机</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+    <link rel="stylesheet" href="Css/taocan.css">
+    <!--引进底部样式-->
+    <link rel="stylesheet" href="common.css">
+    <style>
+
+
+
+        /*导航栏开始部分*/
+        .header {
+            height: 68px;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.2);
+            /*opacity:0.2;*/
+            position: fixed;
+            z-index: 5;
+            /*top: 0;*/
+            /*left: 0;*/
+        }
+
+        .head-cont {
+            width: 1192px;
+            height: 68px;
+            margin-left: 83px;
+            /*background-color: yellow;*/
+            margin: 0 auto;
+            /*position: absolute;*/
+            /*left: 50%;*/
+            /*margin-left: -596px;*/
+        }
+
+        .head-cont .logo {
+            width: 240px;
+            height: 68px;
+            /*background-color: pink;*/
+            float: left;
+        }
+
+        .head-cont li {
+            float: left;
+        }
+
+        .head-cont li a {
+            line-height: 68px;
+            display: block;
+
+            padding: 0 18px;
+            font-size: 18px;
+            color: #fff;
+        }
+
+        .head-cont .search {
+            width: 194px;
+            height: 33px;
+            margin-top: 18px;
+            /*background-color: red;*/
+            float: left;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .head-cont .sear-ico {
+            /*border: 1px solid #F4F6F8;*/
+            border: none;
+            width: 38px;
+            height: 33px;
+            /*margin-top: 18px;*/
+            background: url("Images/common-icons.png") -41px -74px;
+            position: absolute;
+            right: 0px;
+        }
+
+        .head-cont .sear-inp {
+            border: none;
+            width: 194px;
+            height: 31px;
+            position: absolute;
+            left: 194px;
+            background-color: rgba(0, 0, 0, 0);
+            border: 1px solid white;
+            border-right: none;
+        }
+
+        .head-cont .car {
+            width: 96px;
+            height: 68px;
+            float: left;
+            position: relative;
+        }
+
+        .head-cont .car a {
+            width: 40px;
+            height: 33px;
+            position: absolute;
+            left: 30px;
+            top: 17px;
+            overflow: hidden;
+        }
+
+        .head-cont .car-ico {
+            width: 40px;
+            height: 26px;
+            display: block;
+            background: url("Images/common-icons.png") -81px -73px;
+        }
+        .head-cont .car-box{
+            width: 287px;
+            height: 170px;
+            background-color:rgba(208,219,226,0.7);
+            position: absolute;
+            top: 55px;
+            left: -80px;
+            display: none;
+            padding-top: 20px;
+        }
+        .head-cont .car-box p{
+            font: 18px "microsoft yahei";
+            text-align: center;
+        }
+        .head-cont .car-box .big-car-ico{
+            width: 120px;
+            height: 104px;
+            position: absolute;
+            left: 83px;
+            top: 83px;
+            background: url("Images/common-icons.png") 0 -103px ;
+
+        }
+        .head-cont .user {
+            width: 150px;
+            height: 68px;
+            float: left;
+        }
+
+        .head-cont .user .user-ico {
+            margin-top: 18px;
+            width: 40px;
+            height: 26px;
+            /*border: 1px solid blue;*/
+            /*display: block;*/
+            float: left;
+            background: url("Images/common-icons.png") 0px -74px;
+        }
+
+        .head-cont .user .login {
+            width: 110px;
+            height: 68px;
+            line-height: 68px;
+            text-align: center;
+            float: left;
+        }
+        .head-cont .user .spacer{
+            width: 2px;
+            height: 16px;
+            float: left;
+            /*background-color: #fff;*/
+            background-color: #fff;
+            margin-top: 28px;
+
+            /*margin: 5px 26px;*/
+        }
+        .head-cont .user a{
+            color: white;
+            margin: 0 5px;
+            float: left;
+        }
+        .hot-lj {
+            background-color: #E8E7E6;
+            display: none;
+        }
+
+        .selected {
+            display: block;
+        }
+
+        .hot-lj .hot-cont {
+            border-left: 1px solid #C4C4C4;
+            width: 1194px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .hot-lj .hot-cont p {
+            text-align: center;
+            font-size: 10px;
+            font-family: "Microsoft Yahei";
+            margin-top: 5px;
+        }
+
+        .hot-lj li {
+            float: left;
+            border-right: 1px solid #C4C4C4;
+            width: 198px;
+            height: 236px;
+            /*background-color: red;*/
+        }
+        .hot-lj li .color{
+            color : #c83f39;
+        }
+
+        .hot-lj img {
+            display: block;
+            margin-top: 30px;
+            margin-left: 31px;
+        }
+
+
+        /*侧边栏开始部分*/
+        /*site-banner*/
+        .site-banner {
+            position: absolute;
+            z-index: 3;
+        }
+
+        .site-banner .banner-show {
+            position: absolute;
+            background-repeat: no-repeat;
+            background-position: center center;
+            height: 750px;
+            top: 0;
+            width: 100%;
+            z-index: 4;
+        }
+
+        .site-banner .banner-href {
+            cursor: pointer;
+        }
+
+        /*分类及广告图*/
+        .category-column {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            z-index: 4;
+        }
+
+        .goods-category {
+            float: left;
+            width: 240px;
+            position: absolute;
+            margin-top: 68px;
+            z-index: 4;
+            margin-left: 100px;
+            background-color: rgba(0, 0, 0, 0.2);
+            height: 682px;
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#33000000, endColorstr=#33000000);
+        }
+
+        .goods-category-li {
+            display: block;
+            padding-top: 22px;
+            padding-bottom: 27px;
+            height: 64px;
+            overflow: hidden;
+            z-index: 1;
+            border-top: solid 1px #8d8b8b;
+            /*progid: DXImageTransform.Microsoft . gradient(startColorstr = #66ffffff, endColorstr = #66ffffff);*/
+        }
+
+        .goods-category-li:hover {
+            background-color: rgba(0, 0, 0, 0.4);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#66000000, endColorstr=#66000000);
+        }
+
+        .goods-category-name {
+            float: left;
+            width: 180px;
+            padding: 0 30px;
+            height: 64px;
+            overflow: hidden;
+        }
+
+        .goods-category-title {
+            font-size: 20px;
+            margin-bottom: 8px;
+            color: #f7ffff;
+        }
+
+        .goods-category-title a:hover {
+            color: #ef3d39;
+        }
+
+        .goods-category-links {
+            font-size: 12px;
+        }
+
+        .goods-category-links ul {
+            overflow: hidden;
+        }
+
+        .goods-category-links ul li {
+            float: left;
+            margin-right: 8px;
+        }
+
+        .goods-category-links ul li a:hover {
+            color: #ef3d39;
+        }
+
+        .goods-category-second {
+            position: absolute;
+            top: 0;
+            overflow: hidden;
+            display: none;
+            left: 240px;
+            background-color: rgba(255, 255, 255, 0.75);
+            z-index: 2;
+            height: 682px;
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#C8ffffff, endColorstr=#C8ffffff);
+        }
+
+        .goods-category-second ul {
+            float: left;
+            width: 240px;
+            height: 682px;
+        }
+
+        .goods-category-second li {
+            float: left;
+            padding: 21px 29px 22px 30px;
+        }
+
+        .goods-category-second li img {
+            float: left;
+            margin-left: 7px;
+            margin-right: 10px;
+            width: 30px;
+            height: 55px;
+        }
+
+        .goods-category-second li span {
+            float: left;
+            font-size: 14px;
+            line-height: 55px;
+            width: 133px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .goods-category-second li a {
+            color: #333333
+        }
+
+        .goods-category-second li a:hover {
+            color: #ef3d39;
+            display: block;
+        }
+
+        .goods-category-second li:hover {
+            background-color: rgba(255, 255, 255, 0.70);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#B2ffffff, endColorstr=#B2ffffff);
+        }
+
+        .goods-category-li:hover .goods-category-second {
+            display: block;
+        }
+        /*轮播图开始*/
+
+        #box {
+            width: 100%;
+            height: 750px;
+            /*overflow: hidden;*/
+            /*position: absolute;*/
+            margin: 0 auto;
+
+            /*top:0;*/
+        }
+
+        #box #picture {
+            width: 100%;
+            height: 750px;
+        }
+
+        #picture div {
+            position: absolute;
+        }
+
+        #box ol {
+            position: absolute;
+            bottom: 15px;
+            left: 50%;
+
+        }
+
+        /*左右选择键的样式开始*/
+        #arr {
+           /*position: absolute;*/
+            display: none;
+            /*z-index: 5;*/
+
+        }
+
+        #arr span {
+            width: 40px;
+            height: 60px;
+            position: absolute;
+            left: 350px;
+            top: 50%;
+            margin-top: -30px;
+            background: #000;
+            cursor: pointer;
+            line-height: 60px;
+            text-align: center;
+            font-weight: bold;
+            font-family: '黑体';
+            font-size: 30px;
+            color: #fff;
+            opacity: 0.3;
+            border: 1px solid #fff;
+        }
+
+        #arr #right {
+            right: 52px;
+            left: auto;
+        }
+
+        /*左右选择键的样式结束*/
+        /*广告小按钮的样式开始*/
+        #box ol {
+            position: absolute;
+            left: 50%;
+            margin-left: -70px;
+            bottom: 10px;
+            line-height: 20px;
+            text-align: center;
+            list-style: none;
+        }
+
+        #box ol li {
+            float: left;
+            width: 20px;
+            height: 20px;
+            border-radius: 10px;
+            background: yellow;
+            border: 1px solid #ccc;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        #box ol li.current {
+            background-color: red;
+        }
+
+        #picture img {
+            width: 100%;
+            height: 750px;
+        }
+
+        /*广告小按钮的样式结束*/
+        /*轮播图结束*/
+
+        /*小辣椒明星产品*/
+        .w {
+            /*版心 提取 */
+            width: 1210px;
+            margin: 0 auto;
+            /*overflow: hidden;*/
+        }
+        .startwidth{
+            width: 1210px;
+            overflow: hidden;
+            height:340px ;
+            margin-top: 20px;
+            /*position: relative;*/
+            /*float: left;*/
+        }
+        .startwidth ul{
+            width: 5000px;
+            position: relative;
+        }
+
+        /*li{*/
+        /*height: 340px;*/
+        /*width: 231px;*/
+
+        /*overflow: hidden;*/
+        /*}*/
+        .start-good-list {
+            height: 64px;
+            margin-top: 67px;
+        }
+        .startright{
+            height: 64px;
+            position: absolute;
+            right:130px;
+        }
+        .startright  a:hover{
+            color: red;
+        }
+        .startright .left{
+            color: #000;
+            padding: 5px 8px;
+            border: solid 1px #ccc;
+
+        }
+        .star-move-left{color: #000;padding: 5px 8px;border: solid 1px #ccc;}
+
+        .startright .right{
+            color: #000;
+            padding: 5px 8px;
+            border: solid 1px #ccc;
+
+        }
+
+        .li-style {
+            /*left:50%;*/
+            /*background: pink;*/
+            width: 231px;
+            height: 340px;
+            position: relative;
+            overflow: hidden;
+            float: left;
+            margin-right: 11px;
+            /*padding-right: 3px;*/
+            background-color: rgb(236, 236, 236);
+        }
+
+        .li-style .top {
+            height: 231px;
+            /*background-color: yellow;*/
+            overflow: hidden;
+
+        }
+
+        .li-style .top .dd {
+            width: 94px;
+            height: 184px;
+            /*margin: 45px auto;*/
+            position: absolute;
+            left: 50px;
+            top: 20px;
+            /*margin-bottom: 20px;*/
+            /*margin: 0 auto;*/
+            /*vertical-align: middle;*/
+        }
+
+        .star-goods-content-text {
+            text-align: center;
+            width: 231px;
+            height: 84px;
+            /*background-color: blueviolet;*/
+            position: absolute;
+            bottom: 0;
+        }
+
+        .star-goods-content-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: #333333;
+            line-height: 20px;
+        }
+
+        .star-goods-content-center {
+            font-size: 14px;
+            color: #9fa0a0;
+            margin-bottom: 5px;
+            line-height: 20px;
+        }
+
+        .star-goods-content-down {
+            color: #c10001;
+            font-size: 16px;
+            text-align: center;
+            line-height: 30px;
+        }
+
+        /*//右边盒子*/
+        .star-goods-right-top {
+            height: 256px;
+            width: 200px;
+            position: absolute;
+            left: 231px;
+            /*right:-101%;*/
+            top: 0px;
+            /*background-color: yellowgreen;*/
+            /*display: none;*/
+        }
+
+        .star-goods-right-title {
+            font-size: 18px;
+            /*font-weight: 700;*/
+            margin-top: 30px;
+            /*font:14px/1.5 "Microsoft Yahei", "Hiragino Sans GB", sans-serif;*/
+            color: #333333;
+            margin-bottom: 10px;
+        }
+
+        .star-goods-right-xjb {
+            font-size: 18px;
+            font-weight: 700;
+            /*margin-top: 30px;*/
+            /*font:14px/1.5 "Microsoft Yahei", "Hiragino Sans GB", sans-serif;*/
+            color: #333333;
+            margin-bottom: 5px;
+        }
+
+        .star-goods-right-price {
+            margin-top: 5px;
+            font-size: 18px;
+            /*font-weight: 700;*/
+            color: red;
+        }
+
+        .star-goods-right-parameter {
+            margin-top: 4px;
+            font-size: 12px;
+            color: #aeaeae;
+        }
+
+        /*右下边*/
+        .star-goods-details-links {
+            text-align: center;
+            height: 84px;
+            /*background-color: green;*/
+            width: 231px;
+            position: absolute;
+            left: 231px;
+            bottom: 0px;
+
+            /*overflow:;*/
+            /*right:-101%*/
+        }
+
+        .star-goods-details-links a {
+            color: red;
+            /*margin: 0 auto;*/
+            font-size: 20px;
+            text-align: center;
+            line-height: 84px;
+        }
+        /*精选配件*/
+        .jppj{
+            width: 1195px;
+            margin: 0 auto;
+            margin-top: 20px;
+            height: 700px;
+            /*background-color:pink;*/
+        }
+        h2{
+            margin-bottom: 25px;
+        }
+        /*左边盒子*/
+        .left-big{
+            float: left;
+            width: 472px;
+            height: 646px;
+            border: 1px solid #DCDCDC;
+        }
+        .left-big img{
+            height: 646px;
+            width: 472px;
+        }
+        /*右边盒子*/
+        .right-two{
+            float: right;
+            width: 712px;
+            height: 648px;
+            /*background-color: blue;*/
+        }
+        .right-two a{
+            text-decoration: none;
+            color: #545454;
+            font-weight: 700;
+        }
+        .right-two-top{
+            height: 318px;
+            margin-bottom: 10px;
+            /*background-color: yellow;*/
+
+        }
+        .right-two .top-public{
+            width: 227px;
+            height: 316px;
+            border: 1px solid #DBDDDC;
+            margin-right: 8px;
+            text-align: center;
+            position: relative;
+            /*background-color: red;*/
+            float: left;
+        }
+        .right-two .top-public .xianshi{
+            height: 60px;
+            background-color: #f76a6a;
+            position: absolute;
+            bottom: 0;
+            display: none;
+            text-align: center;
+            padding: 5px;
+            font-size: 14px;
+            color: #f2ebf2;
+        }
+        .top-public-pic{
+            height: 170px;
+            width: 165px;
+            margin: 20px auto;
+        }
+        .right-two-bottom{
+            height: 318px;
+            /*background-color:gray;*/
+        }
+        /*内容部分*/
+        a{
+            text-decoration: none;
+        }
+        li{
+            list-style: none;
+            float: left;
+        }
+        #content {
+            width: 1200px;
+            height: 450px;
+            margin: 0 auto;
+        }
+        #content .ul1>li{
+
+            float: left;
+            width: 298px;
+            height: 396px;
+            /*background-color: pink;*/
+            border: 1px solid #DBDCDC;
+            overflow: hidden;
+            position: relative;
+
+        }
+        #content .big-box{
+            width: 620px;
+            position: relative;
+
+
+        }
+        #content .big-box>div{
+            float: left;
+        }
+        .big-box li{
+            width: 298px;
+        }
+
+        .l_div1 {
+            /*width: 270px;*/
+            width: 269px;
+            height: 229px;
+            /*background-color: red;*/
+            margin: 15px 0 0 16px ;
+
+        }
+        /*  #l_div1 img{
+              margin-right: 5px;
+          }*/
+       #content{
+           margin-top: 50px;
+           margin-bottom: 50px;
+       }
+        #content  .position-div{
+            width: 125px;
+            height: 32px;
+            background-color: #F6B02A;
+            border-radius: 10px;
+            line-height: 32px;
+            text-align: center;
+            color: #FFFFFE;
+            z-index: 1;
+            position: absolute;
+            left: 90px;
+            top: 230px;
+
+        }
+        .li_2 .position-div h3{
+            background-color: #E02B62;
+            border-radius: 10px;
+        }
+        .li_3 .position-div h3{
+            background-color: #F53E49;
+            border-radius: 10px;
+        }
+        .li_4 .position-div h3{
+            background-color: #28A2EC;
+            border-radius: 10px;
+        }
+        #content .f-title{
+            width: 243px;
+            font-size: 16px;
+            font-family: "微软雅黑";
+            color: #9C9B9B;
+            text-align: center;
+
+            margin: 0 auto;
+            margin-top: 38px;
+
+        }
+        #content .f-word{
+            width: 240px;
+            font-size: 12px;
+            color: #B8B8B8;
+            /*text-align: center;*/
+            padding-left: 32px;
+            padding-right: 38px;
+            margin-top: 25px;
+
+        }
+
+        #content .number{
+            position :absolute;
+            z-index: 6;
+            padding-left: 126px;
+
+        }
+        #content .number li{
+            width: 8px;
+            height: 8px;
+            font-size: 6px;
+            margin: 388px 5px 0 0 ;
+            border-radius: 4px;
+            /*background-color: #FC8F0F;*/
+            background-color: #333333;
+            cursor: pointer;
+
+        }
+        .arr {
+            display: none;
+            width:298px;
+            height: 42px;
+        }
+
+        .arr span {
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            left: 5px;
+            top: 50%;
+            margin-top: -20px;
+            background: #000;
+            cursor: pointer;
+            line-height: 40px;
+            text-align: center;
+            font-weight: bold;
+            font-family: '黑体';
+            font-size: 30px;
+            color: #fff;
+            opacity: 0.3;
+            border: 1px solid #fff;
+        }
+
+        .arr #rightone {
+            right: 5px;
+            left: auto;
+        }
+        .arr .right{
+            left:auto;
+            right: 0;
+        }
+        /*footer*/
+        .xlj-footer {
+            margin-top: 30px;
+            height: 263px;
+            border: 1px solid #dfdfdf;
+            z-index: 1
+        }
+
+        .xlj-footer ul, .xlj-footer li, .xlj-footer a, .xlj-footer strong, .xlj-footer label, .xlj-footer em {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .xlj-footer .nums {
+
+            color: #656d78;
+            font-size: 15px;
+            border-bottom: 1px solid #dfdfdf;
+            height: 79px;
+            background: #f9faf9;
+        }
+
+        .xlj-footer .nums li {
+            float: left;
+            width: 159px;
+            border-right: 1px solid #dfdfdf;
+            height: 39px;
+            padding: 20px 70px;
+            position: relative;
+        }
+
+        .xlj-footer .nums li.last {
+            width: 158px;
+            border-right: 0;
+        }
+
+        .xlj-footer .nums li a {
+            color: #666
+        }
+
+        .xlj-footer .nums li a:hover {
+            color: #ef3d39
+        }
+
+        .xlj-footer .nums li span {
+            background-image: url(http://theme.xiaolajiao.com/themes/newxlj/images/bg_icon.png);
+            background-repeat: no-repeat;
+            width: 41px;
+            height: 39px;
+            display: block;
+            overflow: hidden;
+            margin-left: 20px;
+        }
+
+        .xlj-footer .nums li strong {
+            display: inline-block;
+            position: absolute;
+            left: 140px;
+            top: 20px;
+            width: 110px;
+            font-size: 16px;
+            font-weight: normal;
+        }
+
+        .xlj-footer .nums li strong label {
+            display: block;
+        }
+
+        .nums1 {
+            background-position: 0 -85px;
+        }
+
+        .nums2 {
+            background-position: -40px -85px;
+        }
+
+        .nums3 {
+            background-position: -90px -85px;
+        }
+
+        .nums4 {
+            background-position: -138px -85px;
+        }
+
+        .xlj-footer .footer-links {
+            padding: 40px 0;
+            overflow: hidden;
+            color: #6d6d6d;
+        }
+
+        .xlj-footer .col-links {
+            float: left;
+            _display: inline;
+            width: 165px;
+            margin: 0 0 0 20px;
+            border-right: 1px solid #dfdfdf
+        }
+
+        .xlj-footer .col-links dt {
+            margin-bottom: 10px;
+            font-size: 18px;
+            color: #333;
+            padding-left: 40px;
+        }
+
+        .xlj-footer .col-links dd {
+            margin: 0 0 6px;
+            padding-left: 40px;
+        }
+
+        .xlj-footer .col-links dd a {
+            color: #6d6d6d;
+            font-size: 12px;
+        }
+
+        .xlj-footer .col-links dd a:hover {
+            color: #ef3d39
+        }
+
+        .xlj-footer .col-links dd span {
+            width: 27px;
+            height: 18px;
+            background-image: url(http://theme.xiaolajiao.com/themes/newxlj/images/bg_icon.png);
+            background-repeat: no-repeat;
+            overflow: hidden;
+            display: inline-block;
+
+            vertical-align: -4px;
+        }
+
+        .xlj-footer .col-links dd span.sina {
+            background-position: -111px 0;
+        }
+
+        .xlj-footer .col-links dd span.qq {
+            background-position: -111px -22px;
+        }
+
+        .xlj-footer .col-links dd span.bbs {
+            background-position: -111px -47px;
+        }
+
+        .xlj-footer .col-links dd a:hover span.sina {
+            background-position: -138px 0;
+        }
+
+        .xlj-footer .col-links dd a:hover span.qq {
+            background-position: -138px -22px;
+        }
+
+        .xlj-footer .col-links dd a:hover span.bbs {
+            background-position: -138px -47px;
+        }
+
+        .xlj-footer .col-links-first {
+            margin-left: 0
+        }
+
+        .xlj-footer .col-contact {
+            float: right;
+            width: 270px;
+            text-align: center
+        }
+
+        .xlj-footer .col-contact p {
+            margin: 0 0 15px
+        }
+
+        .xlj-footer .col-contact p.phone {
+            margin-bottom: 5px;
+            font-size: 29px;
+            line-height: 1;
+            color: #000
+        }
+
+        .xlj-footer .info-text {
+            float: left;
+            width: 710px;
+            margin-bottom: 20px
+        }
+
+        .xlj-footer .info-text a {
+            color: #333
+        }
+
+        .xlj-footer .info-text a:hover {
+            color: #ef3d39
+        }
+
+        .xlj-footer .info-text .logo-mini {
+            float: left;
+            width: 40px;
+            height: 40px;
+            margin-right: 15px;
+            background: #ff4a00;
+            text-align: center
+        }
+
+        .xlj-footer .info-text .logo-mini i {
+            font-size: 28px;
+            color: #fff
+        }
+
+        .xlj-footer .info-text .sep {
+            margin: 0 3px
+        }
+
+        .xlj-footer .info-text p {
+            margin: 0;
+            line-height: 20px
+        }
+
+        .xlj-footer .info-sites {
+            position: relative;
+            float: right;
+            width: 200px;
+            font-size: 12px;
+            color: #8c8c8c
+        }
+
+        .xlj-footer .info-sites .global-site-current {
+            width: 178px;
+            height: 18px;
+            padding: 10px;
+            border: 1px solid #dfdfdf;
+            background: #fff
+        }
+
+        .xlj-footer .info-sites .arrow {
+            position: absolute;
+            right: 10px;
+            top: 17px;
+            z-index: 1;
+            width: 0;
+            height: 0;
+            _font-size: 0;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #dfdfdf #fff #fff
+        }
+
+        .xlj-footer .info-sites .global-site-list {
+            display: none;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: 2;
+            width: 198px;
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            border: 1px solid #dfdfdf;
+            background: #fff
+        }
+
+        .xlj-footer .info-sites .global-site-list li a {
+            display: block;
+            height: 18px;
+            padding: 10px
+        }
+
+        .xlj-footer .info-links {
+            clear: both
+        }
+
+        .xlj-footer .info-links img {
+            width: auto;
+            height: 20px
+        }
+
+        .xlj-footer .serive {
+            width: 128px;
+            height: 33px;
+            background-color:#A9C64F;
+            display: block;
+            margin: 0 auto;
+            line-height: 33px;
+            color: #fff;
+        }
+
+        .xlj-footer .serive:hover {
+            background-color: #78ad3e
+        }
+
+        .xlj-footer .serive span {
+            width: 22px;
+            height: 18px;
+            background: url(http://theme.xiaolajiao.com/themes/newxlj/images/bg_icon.png) no-repeat -78px 0;
+            display: inline-block;
+            overflow: hidden;
+            vertical-align: middle;
+            padding-left: 5px;
+            _margin-top: 7px;
+            _vertical-align: 0;
+        }
+
+        .xlj-footer .info {
+            color: #434a54;
+            font-size: 12px;
+            text-align: center;
+            padding: 20px 0 30px 0;
+        }
+
+        .xlj-footer .believe {
+            padding: 0 0 80px;
+            text-align: center;
+        }
+
+        .xlj-footer .believe a {
+            margin: 0 3px;
+        }
+
+        .xlj-footer .info a {
+            color: #434a54;
+            text-decoration: none;
+            margin: 0 5px 0 5px;
+        }
+
+        .xlj-footer .info img {
+            display: block;
+            width: 194px;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+
+        .xlj-footer .info em {
+            display: inline-block;
+            width: 1px;
+            height: 12px;
+            vertical-align: -2px;
+            background: #ccd1d9;
+        }
+
+        .xlj-footer .info a {
+            color: #434a54;
+            text-decoration: none;
+            margin: 0 5px 0 5px;
+        }
+
+        .xlj-footer .info a:hover {
+            color: #ef3d39;
+        }
+
+        /*footer end*/
+    </style>
+    <script src="jquery-1.12.2.js"></script>
+    <!--导航栏开始-->
+    <script>
+        $(function () {
+            //鼠标经过导航的a标签事件
+            var bg;//记录颜色
+            var index;
+            $("#nav-ul li").mouseenter(function () {
+                index = $(this).index();
+                bg = $(this).css("backgroundColor");
+                $(this).css("backgroundColor", "#5E0B0C");
+                $(".header .hot-lj").eq(index).addClass("selected").siblings().removeClass("selected");
+            });
+            //鼠标离开导航的a标签事件
+            $("#nav-ul li").mouseleave(function () {
+                //鼠标离开回复颜色
+                $(this).css("backgroundColor", bg);
+                //鼠标离开，盒子隐藏
+                $(".header .hot-lj").removeClass("selected");
+            });
+
+            //搜索框进入事件
+            //鼠标经过搜索框，注册事件
+            $(".header .search").mouseenter(function () {
+                //边框显示
+                $(".header .sear-ico").css("border", "1px solid #F4F6F8");
+
+                $(".header .sear-inp").stop(true,false).animate({
+                    "left": "2px"
+                }, 300);
+            });
+            //鼠标离开盒子，搜索框离开
+            $(".header .search").mouseleave(function () {
+                //边框隐藏
+                $(".header .sear-ico").css("border", "none");
+
+                $(".header .sear-inp").stop(true,false).animate({
+                    "left": "194px"
+                }, 300);
+            });
+
+            //鼠标经过购物车
+            $(".header .car a").mouseenter(function () {
+                $(".header .car a").css("border", "1px solid #C3C2C2");
+                //购物车显示
+                $(".header .car .car-box").show();
+            });
+            $(".header .car a").mouseleave(function () {
+                $(".header .car a").css("border", "none");
+                $(".header .car .car-box").hide();
+
+            });
+
+        });
+    </script>
+    <!--轮播图开始-->
+    <script>
+        $(function () {
+            //1.1当鼠标移动到图片上时 左右箭头显示出来
+            $("#box").mouseenter(function () {
+                $("#arr").show()
+            })
+            //1.2当鼠标离开时 左右箭头消失
+            $("#box").mouseleave(function () {
+                $("#arr").hide()
+            })
+
+            //        动态生成图片link
+            for (var i = 0; i < $("#picture>div").length; i++) {
+                var $li = $("<li></li>")
+                $("#link").append($li)
+            }
+            $("#link >li").eq(4).addClass("current")
+
+
+            //2.1给左箭头注册事件当点击右箭头时图片渐变到下一张
+            var pic = 4;//记录图片的索引号
+            $("#left").click(function () {
+                pic--;
+
+                $("#picture>div").eq(pic).fadeIn(1000).siblings().fadeOut()
+                //让当前图片的link显示current
+
+                $("#link >li").eq(pic).addClass("current").siblings().removeClass("current")
+                if (pic == 0) {
+                    pic = 5;
+                }
+
+            })
+
+
+            //2.2 给右箭头注册鼠标点击事件
+            $("#right").click(function () {
+
+                if (pic == 4) {   //如果是第一张 就该跳转到最后一张了
+                    pic = -1;
+                    $("#picture>div").eq(pic + 1).fadeIn(1000).siblings().fadeOut();
+                    $("#link >li").eq(pic + 1).addClass("current").siblings().removeClass("current")
+                    pic++;
+                } else if (pic == 5) {//解决bug 当图片向左移动到第一张图片再点击右边不管用
+                    pic = 1
+                    $("#picture>div").eq(pic).fadeIn(1000).siblings().fadeOut();
+
+                    //让当前图片的link显示current
+
+                    $("#link >li").eq(pic).addClass("current").siblings().removeClass("current")
+                } else {
+                    $("#picture>div").eq(pic + 1).fadeIn(1000).siblings().fadeOut();
+
+                    //让当前图片的link显示current
+
+                    $("#link >li").eq(pic + 1).addClass("current").siblings().removeClass("current")
+                    pic++;
+                }
+
+
+            })
+
+            //3.1 当鼠标点击link 图片也渐变到相应图片
+            $("#link >li").mouseenter(function () {
+                var index = $(this).index()//记录当前link的索引号
+                $("#picture>div").eq(index).fadeIn(1000).siblings().fadeOut();
+                $("#link >li").eq(index).addClass("current").siblings().removeClass("current")
+
+                pic=$(this).index()//把下一个应该亮起的按钮的索引也变成当前经过的按钮的索引
+            })
+
+
+
+
+            //4.1自动渐变轮播
+
+            var timeId=setInterval(function(){
+
+                pic++;
+
+                $("#picture>div").eq(pic).fadeIn(1000).siblings().fadeOut()
+                //让当前图片的link显示current
+
+                $("#link >li").eq(pic).addClass("current").siblings().removeClass("current")
+                if(pic==5){
+                    pic=-1;
+                };
+            },4000);
+//            5.1鼠标放上去结束自动轮播
+            $("#box").mouseenter(function(){
+//            $("#arr").show()
+                clearInterval(timeId);
+            });
+
+            //5.2鼠标离开时开始轮播
+            $("#box").mouseleave(function(){
+//            $("#arr").hide()
+
+                timeId=setInterval(function(){
+
+                    pic++;
+
+                    $("#picture>div").eq(pic).fadeIn(1000).siblings().fadeOut();
+                    //让当前图片的link显示current
+
+                    $("#link >li").eq(pic).addClass("current").siblings().removeClass("current");
+                    if(pic==5){
+                        pic=-1;
+                    };
+
+//            console.log("我执行了")
+                },2000);
+            });
+        });
+
+
+//        小辣椒明星产品
+        $(function () {
+//
+            $(".li-style").mouseenter(function () {
+//               =
+
+                $(this).find(".dd").stop().animate({"left": "20px"}, 800);
+                $(this).find(".star-goods-content-text").stop().animate({"left": "-100%"}, 800);
+                $(this).find(".star-goods-right-top").stop().animate({"left": "120px"}, 800);
+                $(this).find(".star-goods-details-links").stop().animate({"left": "0px"}, 800);
+                $(this).css("background-color", "#f5f4f4");
+
+            });
+            $(".li-style").mouseleave(function () {
+                $(this).find(".dd").stop().animate({"left": "60px"}, 500);
+                $(this).find(".star-goods-content-text").stop().animate({"left": "0"}, 500);
+                $(this).find(".star-goods-right-top").stop().animate({"left": "231px"}, 500);
+                $(this).find(".star-goods-details-links").stop().animate({"left": "100%"}, 500);
+                $(this).css("background-color", "#ececec");
+
+            });
+
+//
+            var startlength=$(".li-style").length;
+//            console.log(startlength);
+            var startwidths=$(".li-style").width();
+//            console.log(startwidths);
+            var sum=startlength*startwidths-(startwidths*5)+(10*(startlength-5));
+//            console.log(sum);
+            $(".left").click(function(){
+//                $("#starts").css("margin-left","0");
+                $("#starts").animate({"left":"0px"},800);
+                return false;
+
+            });
+            $(".right").click(function(){
+
+//                $("#starts").css("margin-left","-"+sum+"px");
+                $("#starts").animate({"left":"-"+sum+"px"},800);
+                return false;
+
+
+            });
+
+        });
+//        精选配件
+        $(function () {
+            $(".top-public").mouseenter(function () {
+                $(this).children(".xianshi").show();
+
+            });
+            $(".top-public").mouseleave(function () {
+                $(this).children(".xianshi").hide();
+
+            })
+        })
+        //内容部分
+        $(function(){
+
+            mouseClick("number1","bigboxone")
+
+            mouseClick("number2","bigbox2")
+
+            $("#bigboxone").mouseenter(function(){
+                $("#arr1").fadeIn();
+            });
+            $("#arr1").mouseenter(function(){
+//                $("#arr1").css("display","block");
+                $("#arr1").fadeIn();
+            });
+            $("#bigboxone").mouseleave(function(){
+
+                $("#arr1").fadeOut()
+
+            });
+            $("#bigbox2").mouseenter(function(){
+                $("#arr2").fadeIn();
+            });
+            $("#arr2").mouseenter(function(){
+//                $("#arr2").css("display","block");
+                $("#arr2").fadeIn();
+            });
+            $("#bigbox2").mouseleave(function(){
+//                $("#arr2").css("display","none");
+                $("#arr2").fadeOut();
+            });
+
+
+            function mouseClick(num,bigbox){
+
+                $("."+num+">li").click(function(){
+
+                    var index=$(this).index();
+                    $("."+num+">li").css("backgroundColor","black");
+                    $(this).css("backgroundColor"," #FC8F0F");
+                    var moveDistance=-index*310;
+                    $("#"+bigbox+"").css("left",""+moveDistance+"px")
+
+                });
+            }
+
+
+        });
+
+    </script>
+
+</head>
+<body>
+<!--nav部分-->
+
+<div class="header">
+    <!--导航显示-->
+    <div class="head-cont">
+        <div class="logo">
+            <a href="javascript:;"><img src="images/logo.png" alt=""/></a>
+        </div>
+        <ul id="nav-ul">
+            <li><a href="javascript:;">红辣椒手机</a></li>
+            <li><a href="javascript:;">小辣椒手机</a></li>
+            <li><a href="javascript:;">服务</a></li>
+            <li><a href="javascript:;">社区</a></li>
+            <li><a href="javascript:;">积分商城</a></li>
+        </ul>
+        <div class="search">
+            <button class="sear-ico"></button>
+            <input class="sear-inp" type="text"/>
+        </div>
+        <div class="car">
+            <a href="javascript:;">
+                <i class="car-ico"></i>
+            </a>
+            <div class="car-box">
+                <i class="big-car-ico"></i>
+                <p>您的购物车中还没有产品，</p>
+                <p>赶快去选购吧！</p>
+            </div>
+        </div>
+        <div class="user">
+            <i class="user-ico"></i>
+
+            <div class="login">
+                <a href="javascript:;" id="login">登录</a>
+                <i class="spacer"></i>
+                <a href="login.html" id="register">注册</a>
+            </div>
+
+        </div>
+    </div>
+    <!--导航下隐藏的下拉盒子-->
+    <div class="hot-lj">
+        <div class="hot-cont ">
+            <ul>
+                <li>
+                    <img src="images/20160108102640_96716.png" alt=""/>
+                    <p>红辣椒Note3</p>
+                    <p class="color">仅699元</p>
+                </li>
+                <li>
+                    <img src="images/20160217110917_89889.png" alt=""/>
+                    <p>红辣椒任性版+</p>
+                    <p class="color">仅399元</p>
+                </li>
+                <li>
+                    <img src="images/20160505143945_31613.png" alt=""/>
+                    <p>红辣椒Note3 Pro</p>
+                    <p class="color">新品仅899元</p>
+                </li>
+                <li>
+                    <img src="images/20160321162852_57647.png" alt=""/>
+                    <p>红辣椒国民猴赛雷</p>
+                    <p class="color">399元</p>
+                </li>
+                <li>
+                    <img src="images/20160328110001_19709.png" alt=""/>
+                    <p>红辣椒Note</p>
+                    <p class="color">特价599元</p>
+                </li>
+                <li>
+                    <img src="images/20160328110001_96697.png" alt=""/>
+                    <p>红辣椒XM双4G版</p>
+                    <p class="color">特价499元</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--//小辣椒-->
+    <div class="hot-lj">
+        <div class="hot-cont ">
+            <ul>
+                <li>
+                    <img src="images/20160505143945_84473.png" alt=""/>
+                    <p>红辣椒任性版+</p>
+                    <p class="color">仅399元</p>
+                </li>
+                <li>
+                    <img src="images/20160331155120_12042.png" alt=""/>
+                    <p>红辣椒Note3</p>
+                    <p class="color">仅699元</p>
+                </li>
+                <li>
+                    <img src="images/20160217110917_89889.png" alt=""/>
+                    <p>红辣椒国民猴赛雷</p>
+                    <p class="color">399元</p>
+                </li>
+                <li>
+                    <img src="images/20160408173941_29665.png" alt=""/>
+                    <p>红辣椒Note3 Pro</p>
+                    <p class="color">新品仅899元</p>
+                </li>
+                <li>
+                    <img src="images/20160328110001_19709.png" alt=""/>
+                    <p>红辣椒XM双4G版</p>
+                    <p class="color">特价499元</p>
+                </li>
+                <li>
+                    <img src="images/20160505143945_31613.png" alt=""/>
+                    <p>红辣椒Note</p>
+                    <p class="color">特价599元</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div></div>
+<!--sidebar及轮播部分-->
+<div class="category-column">
+    <div class="goods-category">
+        <ul class="goods-category-ul">
+            <!--分类列表循环-->
+            <li class="goods-category-li">
+                <div class="goods-category-name">
+                    <div class="goods-category-title">
+                        <a href="#">红辣椒手机</a>
+                    </div>
+                    <div class="goods-category-links">
+                        <ul>
+                            <li>
+                                <a href="#">红辣椒Note3</a>
+                            </li>
+                            <li>
+                                <a href="#">红辣椒任性版+</a>
+                            </li>
+                            <li>
+                                <a href="#">红辣椒Note3 Pro</a>
+                            </li>
+                            <li>
+                                <a href="#">红辣椒国民猴赛雷</a>
+                            </li>
+                            <li>
+                                <a href="#">红辣椒XM</a>
+                            </li>
+                            <li>
+                                <a href="#">红辣椒Note</a>
+                            </li>
+                            <li>
+                                <a href="#">红辣椒XM</a>
+                            </li>
+                            <li>
+                                <a href="">红辣椒4G电信版</a>
+                            </li>
+                            <li>
+                                <a href="">红辣椒联通版</a>
+                            </li>
+                            <li>
+                                <a href="">红辣椒移动版</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="goods-category-second">
+                    <ul>
+                        <li>
+                            <a href="#"><img
+                                    src="images/20160118102635_77119.png"><span>红辣椒Note3</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img
+                                    src="images/20160217113511_98664.png"><span>红辣椒任性版+</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img
+                                    src="images/20160411143906_70611.png"><span>红辣椒Note3 Pro</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img
+                                    src="images/20160321163445_31037.png"><span>红辣椒国民猴赛雷</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/note_002.png"><span>红辣椒Note</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img
+                                    src="images/20160328110001_15613.png"><span>红辣椒XM双4G版</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img
+                                    src="images/20160408175842_75344.png"><span>红辣椒国民全网通</span></a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="#"><img
+                                    src="images/20160505115200_93603.png"><span>红辣椒国民经典一代</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img
+                                    src="images/xm.png"><span>红辣椒XM Pro</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img
+                                    src="images/xm.png"><span>红辣椒XM电信版</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img
+                                    src="images/x1.png"><span>红辣椒X1</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img
+                                    src="images/20151218092450_53727.png"><span>红辣椒XL</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img
+                                    src="images/20160328162758_52956.png"><span>电信4G</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img
+                                    src="images/20160408180121_76257.png"><span>全网通</span></a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="#"><img
+                                    src="images/20160328155403_65793.png"><span>移动联通双4G</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img
+                                    src="images/20160328155403_64457.png"><span>移动4G</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img
+                                    src="images/20160328155403_28036.png"><span>联通4G</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <!--END分类列表循环--><!--分类列表循环-->
+
+
+            <li class="goods-category-li">
+                <div class="goods-category-name">
+                    <div class="goods-category-title">
+                        <a href="#">小辣椒手机</a>
+                    </div>
+                    <div class="goods-category-links">
+                        <ul>
+                            <li>
+                                <a href="#">小辣椒S5</a>
+                            </li>
+                            <li>
+                                <a href="#">小辣椒S6</a>
+                            </li>
+                            <li>
+                                <a href="#">小辣椒X6 Pro</a>
+                            </li>
+                            <li>
+                                <a href="#">小辣椒S1 Pro</a>
+                            </li>
+                            <li>
+                                <a href="#">小辣椒S3</a>
+                            </li>
+                            <li>
+                                <a href="#">小辣椒S2</a>
+                            </li>
+                            <li>
+                                <a href="#">小辣椒X5</a>
+                            </li>
+                            <li>
+                                <a href="#">小辣椒S1</a>
+                            </li>
+                            <li>
+                                <a href="#">小辣椒X4</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="goods-category-second">
+                    <ul>
+                        <li>
+                            <a href="#"><img
+                                    src="images/20160505143945_54245.png"><span>小辣椒S5</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img
+                                    src="images/20160505143945_41091.png"><span>小辣椒S6</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img
+                                    src="images/20160411143906_98121.png"><span>小辣椒X6 Pro</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/s1_002.png"><span>小辣椒S1 Pro</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img
+                                    src="images/20151216110835_40729.png"><span>小辣椒S3</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img
+                                    src="images/20160106161854_74076.png"><span>小辣椒S2</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img
+                                    src="images/x5.png"><span>小辣椒X5</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img
+                                    src="images/s1_002.png"><span>小辣椒S1</span></a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="#"><img
+                                    src="images/20151229101949_74631.png"><span>小辣椒X4</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img
+                                    src="images/3.png"><span>小辣椒3电信版</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <!--END分类列表循环--><!--分类列表循环-->
+            <li class="goods-category-li">
+                <div class="goods-category-name">
+                    <div class="goods-category-title">
+                        <a href="#">专用配件</a>
+                    </div>
+                    <div class="goods-category-links">
+                        <ul>
+                            <li>
+                                <a href="#">电池</a>
+                            </li>
+                            <li>
+                                <a href="#">贴膜</a>
+                            </li>
+                            <li>
+                                <a href="#">保护套/保护壳</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="goods-category-second">
+                    <ul>
+                        <li>
+                            <a href="#"><img
+                                    src="images/20151214170252_97422.png"><span>电池</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img
+                                    src="images/img2_002.png"><span>贴膜</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/img1.png"><span>保护套/保护壳</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <!--END分类列表循环--><!--分类列表循环-->
+
+            <li class="goods-category-li">
+                <div class="goods-category-name">
+                    <div class="goods-category-title">
+                        <a href="#">通用配件</a>
+                    </div>
+                    <div class="goods-category-links">
+                        <ul>
+                            <li>
+                                <a href="#">耳机</a>
+                            </li>
+                            <li>
+                                <a href="#">数据线</a>
+                            </li>
+                            <li>
+                                <a href="#">充电器</a>
+                            </li>
+                            <li>
+                                <a href="#">存储卡</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="goods-category-second">
+                    <ul>
+                        <li>
+                            <a href="#"><img
+                                    src="images/20160328162746_49970.png"><span>耳机</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img
+                                    src="images/img4.png"><span>数据线</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img
+                                    src="images/img1_002.png"><span>充电器</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img
+                                    src="images/img2.png"><span>存储卡</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <!--END分类列表循环--><!--分类列表循环-->
+
+
+            <li class="goods-category-li">
+                <div class="goods-category-name">
+                    <div class="goods-category-title">
+                        <a href="#">通话产品</a>
+                    </div>
+                    <div class="goods-category-links">
+                        <ul>
+                            <li>
+                                <a href="#">辣聊话费</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="goods-category-second">
+                    <ul>
+                        <li>
+                            <a href="#"><img
+                                    src="images/20160307180131_63157.png"><span>20元话费辣聊卡</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/img2_003.png"><span>100元话费辣聊卡</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img
+                                    src="images/20160307180301_57388.png"><span>200元话费辣聊卡</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img
+                                    src="images/20160307180301_76736.png"><span>500元话费辣聊卡</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <!--END分类列表循环--><!--分类列表循环-->
+
+
+            </li>
+            <li class="goods-category-li">
+                <div class="goods-category-name">
+                    <div class="goods-category-title">
+                        <a href="#">生活周边</a>
+                    </div>
+                    <div class="goods-category-links">
+                        <ul>
+                            <li>
+                                <a href="#">行李箱</a>
+                            </li>
+                            <li>
+                                <a href=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="goods-category-second">
+                    <ul>
+                        <li>
+                            <a href="#"><img
+                                    src="images/20160122151112_58211.png"><span>行李箱</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <!--END分类列表循环-->
+        </ul>
+    </div>
+
+    <div id="box">
+        <!--五张图片-->
+        <div id="picture">
+            <div class="pic1"><img src="images/01.jpg" alt=""/></div>
+            <div class="pic2"><img src="images/02.jpg" alt=""/></div>
+            <div class="pic3"><img src="images/03.jpg" alt=""/></div>
+            <div class="pic4"><img src="images/04.jpg" alt=""/></div>
+            <div class="pic5"><img src="images/05.jpg" alt=""/></div>
+        </div>
+        <!--左右选择键-->
+        <div id="arr"><span id="left">&lt;</span><span id="right">&gt;</span></div>
+
+        <!--下面小按钮-->
+        <div class="banner-link">
+            <ol id="link">
+
+            </ol>
+        </div>
+
+    </div>
+    <!--轮播图结束-->
+</div>
+<!--小辣椒明星产品-->
+<div class="w start-good-list">
+    <h2>小辣椒明星产品</h2>
+    <div class=" startright">
+        <a class="left" href="#">&lt; </a>
+        <a  class="right" href="#">&gt;</a>
+    </div>
+</div>
+<div class="w startwidth">
+    <ul id="starts" >
+
+        <!--<li class="star-goods">-->
+        <!--//左边盒子-->
+        <li class="li-style">
+            <div class="top">
+                <div class="dd">
+                    <img src="Images/1.png" alt=""/>
+
+                </div>
+            </div>
+
+            <div class="star-goods-content-text">
+                <p class="star-goods-content-title">红辣椒Note</p>
+
+                <p class="star-goods-content-center">性价比：强势配置，无语争锋</p>
+
+                <p class="star-goods-content-down">仅699元</p>
+            </div>
+            <!--//右边盒子-->
+            <div class="star-goods-right-top">
+                <p class="star-goods-right-title">
+                    红辣椒 <br/> Note3
+                </p>
+
+                <p class="star-goods-right-price">
+                    仅699元
+                </p>
+                <ul class="star-goods-right-parameter ">
+                    <li>
+                        5.5 1080P FHD屏
+                    </li>
+                    <li>
+                        FPC2.0指纹识别
+                    </li>
+                    <li>
+                        八核CPU
+                    </li>
+                    <li>
+                        2+16G超大内存
+                    </li>
+                    <li>
+                        移动联通双4G
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="star-goods-details-links">
+                <a href="#">立即购买</a> <a
+                    href="#">查看详情</a>
+            </div>
+        </li>
+        <!--//左边盒子-->
+        <li class="li-style">
+            <div class="top">
+                <div class="dd">
+                    <img src="Images/2.png" alt=""/>
+
+                </div>
+            </div>
+
+            <div class="star-goods-content-text">
+                <p class="star-goods-content-title">红辣椒任性版</p>
+
+                <p class="star-goods-content-center">性价比：国民手机旗舰版</p>
+
+                <p class="star-goods-content-down">仅399元</p>
+            </div>
+            <!--//右边盒子-->
+            <div class="star-goods-right-top">
+                <p class="star-goods-right-title">
+                    红辣椒任性 <br/> 版+
+                </p>
+
+                <!--<p class="star-goods-right-xjb">-->
+
+                <!--性价比：国民手机旗舰版-->
+                <!--</p>-->
+                <p class="star-goods-right-price">
+                    仅399<span>元</span>
+                </p>
+                <ul class="star-goods-right-parameter ">
+                    <li>
+                        双卡双待
+                    </li>
+                    <li>
+                        移动联通双4g
+                    </li>
+                    <li>
+                        八核CPU
+                    </li>
+                    <li>
+                        2+16G超大内存
+                    </li>
+                    <li>
+                        移动联通双4G
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="star-goods-details-links">
+                <a href="#">立即购买</a> <a
+                    href="#">查看详情</a>
+            </div>
+        </li>
+        <li class="li-style">
+            <div class="top">
+                <div class="dd">
+                    <img src="Images/003.png" alt=""/>
+
+                </div>
+            </div>
+
+            <div class="star-goods-content-text">
+                <p class="star-goods-content-title">红辣椒Note3 pro</p>
+
+                <p class="star-goods-content-center">3+32G内存</p>
+
+                <p class="star-goods-content-down">新品899元</p>
+            </div>
+            <!--//右边盒子-->
+            <div class="star-goods-right-top">
+                <p class="star-goods-right-title">
+                    红辣椒 <br/> Note3
+                </p>
+
+                <p class="star-goods-right-price">
+                    仅699元
+                </p>
+                <ul class="star-goods-right-parameter ">
+                    <li>
+                        5.5 1080P FHD屏
+                    </li>
+                    <li>
+                        FPC2.0指纹识别
+                    </li>
+                    <li>
+                        八核CPU
+                    </li>
+                    <li>
+                        2+16G超大内存
+                    </li>
+                    <li>
+                        移动联通双4G
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="star-goods-details-links">
+                <a href="#">立即购买</a> <a
+                    href="#">查看详情</a>
+            </div>
+        </li>
+        <li class="li-style">
+            <div class="top">
+                <div class="dd">
+                    <img src="Images/4.png" alt=""/>
+
+                </div>
+            </div>
+
+            <div class="star-goods-content-text">
+                <p class="star-goods-content-title">红辣椒国民猴翟雷</p>
+
+                <p class="star-goods-content-center">性价比高的4G手机/p>
+
+                <p class="star-goods-content-down">仅699元</p>
+            </div>
+            <!--//右边盒子-->
+            <div class="star-goods-right-top">
+                <p class="star-goods-right-title">
+                    红辣椒 <br/> Note3
+                </p>
+
+                <p class="star-goods-right-price">
+                    新品399元
+                </p>
+                <ul class="star-goods-right-parameter ">
+                    <li>
+                        5.5 1080P FHD屏
+                    </li>
+                    <li>
+                        FPC2.0指纹识别
+                    </li>
+                    <li>
+                        八核CPU
+                    </li>
+                    <li>
+                        2+16G超大内存
+                    </li>
+                    <li>
+                        移动联通双4G
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="star-goods-details-links">
+                <a href="#">立即购买</a> <a
+                    href="#">查看详情</a>
+            </div>
+        </li>
+        <li class="li-style">
+            <div class="top">
+                <div class="dd">
+                    <img src="Images/5.png" alt=""/>
+
+                </div>
+            </div>
+
+            <div class="star-goods-content-text">
+                <p class="star-goods-content-title">红辣椒Note</p>
+
+                <p class="star-goods-content-center">性价比：强势配置，无语争锋八核竞技玩家：高配低价大电池</p>
+
+                <p class="star-goods-content-down">特价599元</p>
+            </div>
+            <!--//右边盒子-->
+            <div class="star-goods-right-top">
+                <p class="star-goods-right-title">
+                    红辣椒 <br/> Note3
+                </p>
+
+                <p class="star-goods-right-price">
+                    仅699元
+                </p>
+                <ul class="star-goods-right-parameter ">
+                    <li>
+                        5.5 1080P FHD屏
+                    </li>
+                    <li>
+                        FPC2.0指纹识别
+                    </li>
+                    <li>
+                        八核CPU
+                    </li>
+                    <li>
+                        2+16G超大内存
+                    </li>
+                    <li>
+                        移动联通双4G
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="star-goods-details-links">
+                <a href="#">立即购买</a> <a
+                    href="#">查看详情</a>
+            </div>
+        </li>
+        <li class="li-style">
+            <div class="top">
+                <div class="dd">
+                    <img src="Images/6.png" alt=""/>
+
+                </div>
+            </div>
+
+            <div class="star-goods-content-text">
+                <p class="star-goods-content-title">红辣椒Note</p>
+
+                <p class="star-goods-content-center">八核竞技玩家：高配低价大电池</p>
+
+                <p class="star-goods-content-down">特价599元</p>
+            </div>
+            <!--//右边盒子-->
+            <div class="star-goods-right-top">
+                <p class="star-goods-right-title">
+                    红辣椒 <br/> Note3
+                </p>
+
+                <p class="star-goods-right-price">
+                    仅699元
+                </p>
+                <ul class="star-goods-right-parameter ">
+                    <li>
+                        5.5 1080P FHD屏
+                    </li>
+                    <li>
+                        FPC2.0指纹识别
+                    </li>
+                    <li>
+                        八核CPU
+                    </li>
+                    <li>
+                        2+16G超大内存
+                    </li>
+                    <li>
+                        移动联通双4G
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="star-goods-details-links">
+                <a href="#">立即购买</a> <a
+                    href="#">查看详情</a>
+            </div>
+        </li>
+        <li class="li-style">
+            <div class="top">
+                <div class="dd">
+                    <img src="Images/7.png" alt=""/>
+
+                </div>
+            </div>
+
+            <div class="star-goods-content-text">
+                <p class="star-goods-content-title">红辣椒XM双4G版</p>
+
+                <p class="star-goods-content-center">高性能+高颜值+低价格</p>
+
+                <p class="star-goods-content-down">特价499元</p>
+            </div>
+            <!--//右边盒子-->
+            <div class="star-goods-right-top">
+                <p class="star-goods-right-title">
+                    红辣椒 <br/> Note3
+                </p>
+
+                <p class="star-goods-right-price">
+                    仅699元
+                </p>
+                <ul class="star-goods-right-parameter ">
+                    <li>
+                        5.5 1080P FHD屏
+                    </li>
+                    <li>
+                        FPC2.0指纹识别
+                    </li>
+                    <li>
+                        八核CPU
+                    </li>
+                    <li>
+                        2+16G超大内存
+                    </li>
+                    <li>
+                        移动联通双4G
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="star-goods-details-links">
+                <a href="#">立即购买</a> <a
+                    href="#">查看详情</a>
+            </div>
+        </li>
+        <li class="li-style">
+            <div class="top">
+                <div class="dd">
+                    <img src="Images/1.png" alt=""/>
+
+                </div>
+            </div>
+
+            <div class="star-goods-content-text">
+                <p class="star-goods-content-title">红辣椒国民全网通</p>
+
+                <p class="star-goods-content-center">性价比高的全网通手机</p>
+
+                <p class="star-goods-content-down">新品&nbsp;99元</p>
+            </div>
+            <!--//右边盒子-->
+            <div class="star-goods-right-top">
+                <p class="star-goods-right-title">
+                    红辣椒 <br/> Note3
+                </p>
+
+                <p class="star-goods-right-price">
+                    仅699元
+                </p>
+                <ul class="star-goods-right-parameter ">
+                    <li>
+                        5.5 1080P FHD屏
+                    </li>
+                    <li>
+                        FPC2.0指纹识别
+                    </li>
+                    <li>
+                        八核CPU
+                    </li>
+                    <li>
+                        2+16G超大内存
+                    </li>
+                    <li>
+                        移动联通双4G
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="star-goods-details-links">
+                <a href="#">立即购买</a> <a
+                    href="#">查看详情</a>
+            </div>
+        </li>
+        <li class="li-style">
+            <div class="top">
+                <div class="dd">
+                    <img src="Images/5.png" alt=""/>
+
+                </div>
+            </div>
+
+            <div class="star-goods-content-text">
+                <p class="star-goods-content-title">红辣椒Note</p>
+
+                <p class="star-goods-content-center">性价比：强势配置，无语争锋</p>
+
+                <p class="star-goods-content-down">仅699元</p>
+            </div>
+            <!--//右边盒子-->
+            <div class="star-goods-right-top">
+                <p class="star-goods-right-title">
+                    红辣椒 <br/> Note3
+                </p>
+
+                <p class="star-goods-right-price">
+                    仅699元
+                </p>
+                <ul class="star-goods-right-parameter ">
+                    <li>
+                        5.5 1080P FHD屏
+                    </li>
+                    <li>
+                        FPC2.0指纹识别
+                    </li>
+                    <li>
+                        八核CPU
+                    </li>
+                    <li>
+                        2+16G超大内存
+                    </li>
+                    <li>
+                        移动联通双4G
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="star-goods-details-links">
+                <a href="#">立即购买</a> <a
+                    href="#">查看详情</a>
+            </div>
+        </li>
+        <li class="li-style">
+            <div class="top">
+                <div class="dd">
+                    <img src="Images/1.png" alt=""/>
+
+                </div>
+            </div>
+
+            <div class="star-goods-content-text">
+                <p class="star-goods-content-title">红辣椒Note</p>
+
+                <p class="star-goods-content-center">性价比：强势配置，无语争锋</p>
+
+                <p class="star-goods-content-down">仅699元</p>
+            </div>
+            <!--//右边盒子-->
+            <div class="star-goods-right-top">
+                <p class="star-goods-right-title">
+                    红辣椒 <br/> Note3
+                </p>
+
+                <p class="star-goods-right-price">
+                    仅699元
+                </p>
+                <ul class="star-goods-right-parameter ">
+                    <li>
+                        5.5 1080P FHD屏
+                    </li>
+                    <li>
+                        FPC2.0指纹识别
+                    </li>
+                    <li>
+                        八核CPU
+                    </li>
+                    <li>
+                        2+16G超大内存
+                    </li>
+                    <li>
+                        移动联通双4G
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="star-goods-details-links">
+                <a href="#">立即购买</a> <a
+                    href="#">查看详情</a>
+            </div>
+        </li>
+
+
+
+    </ul>
+
+</div>
+<!--精选配件-->
+<!--精选配件-->
+<div class="jppj">
+    <h2>精选配件</h2>
+    <div class="left-big">
+        <img src="Images/1463130006868458442.jpg" alt="">
+    </div>
+    <div class="right-two">
+        <div class="right-two-top">
+            <div class="top-public">
+                <div class="top-public-pic">
+                    <a href="#">
+                        <img src="Images/31.png" alt="">
+                    </a>
+                </div>
+                <p><a href="#">小辣椒活塞耳机 通用</a></p>
+                <p>39元</p>
+                <div class="xianshi">
+                    <p>正品，质量非常好，没有色差。材质很好，做工细致，音质好…
+                        来自 ggjkk75 的评论</p>
+                </div>
+            </div>
+            <div class="top-public">
+                <div class="top-public-pic">
+                    <a href="#">
+                        <img src="Images/32.png" alt="">
+                    </a>
+                </div>
+                <p><a href="#">小辣椒活塞耳机 通用</a></p>
+                <p>39元</p>
+                <div class="xianshi">
+                    <p>正品，质量非常好，没有色差。材质很好，做工细致，音质好…
+                        来自 ggjkk75 的评论</p>
+                </div>
+            </div>
+            <div class="top-public">
+                <div class="top-public-pic">
+                    <a href="#">
+                        <img src="Images/33.png" alt="">
+                    </a>
+                </div>
+                <p><a href="#">小辣椒活塞耳机 通用</a></p>
+                <p>39元</p>
+                <div class="xianshi">
+                    <p>正品，质量非常好，没有色差。材质很好，做工细致，音质好…
+                        来自 ggjkk75 的评论</p>
+                </div>
+            </div>
+        </div>
+        <div class="right-two-bottom">
+            <div class="top-public">
+                <div class="top-public-pic">
+                    <a href="#">
+                        <img src="Images/34.png" alt="">
+                    </a>
+                </div>
+                <p><a href="#">小辣椒活塞耳机 通用</a></p>
+                <p>39元</p>
+                <div class="xianshi">
+                    <p>正品，质量非常好，没有色差。材质很好，做工细致，音质好…
+                        来自 ggjkk75 的评论</p>
+                </div>
+            </div>
+            <div class="top-public">
+                <div class="top-public-pic">
+                    <a href="#">
+                        <img src="Images/35.png" alt="">
+                    </a>
+                </div>
+                <p><a href="#">小辣椒活塞耳机 通用</a></p>
+                <p>39元</p>
+                <div class="xianshi">
+                    <p>正品，质量非常好，没有色差。材质很好，做工细致，音质好…
+                        来自 ggjkk75 的评论</p>
+                </div>
+            </div>
+            <div class="top-public">
+                <div class="top-public-pic">
+                    <a href="#">
+                        <img src="Images/32.png" alt="">
+                    </a>
+                </div>
+                <p><a href="#">小辣椒活塞耳机 通用</a></p>
+                <p>39元</p>
+                <div class="xianshi">
+                    <p>正品，质量非常好，没有色差。材质很好，做工细致，音质好…
+                        来自 ggjkk75 的评论</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--小辣椒特惠及套餐-->
+<div class="preferential-subarea">
+    <h2>小辣椒特惠及套餐</h2>
+    <a class="preferential-subarea-more" href="#">查看全部>></a>
+
+    <div class="etui">
+        <div class="etui-left">
+            <div class="etui-long ">
+                <a href="#" target="_blank"><img src="Picture/1463130150698754590.jpg" alt=""></a>
+            </div>
+            <div class="etui-long revise-top">
+                <a href="#" target="_blank"><img src="Picture/1456219503943539097.jpg" alt=""></a>
+            </div>
+        </div>
+
+        <div class="etui-right">
+            <ul>
+                <li class="preferential-normal ">
+                    <a href="#" target="_blank">
+                        <img src="Picture/1455785058821616193.png">
+                        <p class="preferential-normal-title">小辣椒3电信版</p>
+                        <p class="preferential-normal-introduce">还送专用原装保护壳+电池 </p>
+                        <p class="preferential-normal-price1">现价599元<span>原价699元</span></p>                        </a>
+                </li>
+                <li class="preferential-normal ">
+                    <a href="#" target="_blank">
+                        <img src="Picture/1455785511909846979.png">
+                        <p class="preferential-normal-title">20元话费辣聊卡</p>
+                        <p class="preferential-normal-introduce">2分9/分钟打遍全国，没有漫游费</p>
+                        <p class="preferential-normal-price1">推广价2元<span>原价20元</span></p>                        </a>
+                </li>
+                <li class="preferential-normal ">
+                    <a href="#" target="_blank">
+                        <img src="Picture/1450320724448464727.jpg">
+                        <p class="preferential-normal-title">红辣椒联通版</p>
+                        <p class="preferential-normal-introduce">女神粉，1300万美颜相机</p>
+                        <p class="preferential-normal-price1">现价599元<span>原价699元</span></p>                        </a>
+                </li>
+                <li class="preferential-normal revise-top">
+                    <a href="#" target="_blank">
+                        <img src="Picture/1455786102914043754.png">
+                        <p class="preferential-normal-title">红辣椒XL套餐版</p>
+                        <p class="preferential-normal-introduce">手机+智能翻盖皮套+钢化膜</p>
+                        <p class="preferential-normal-price2">仅售1009元<span>节省148元</span></p>                        </a>
+                </li>
+                <li class="preferential-normal revise-top">
+                    <a href="#" target="_blank">
+                        <img src="Picture/1455786984222755764.png">
+                        <p class="preferential-normal-title">红辣椒XM电信版套餐版</p>
+                        <p class="preferential-normal-introduce">手机+贴膜+电池</p>
+                        <p class="preferential-normal-price2">仅售628元<span>节省50元</span></p>                        </a>
+                </li>
+                <li class="preferential-normal revise-top">
+                    <a href="#" target="_blank">
+                        <img src="Picture/1463140142070412928.png">
+                        <p class="preferential-normal-title">红辣椒XM双4G套餐版</p>
+                        <p class="preferential-normal-introduce">手机+贴膜+电池</p>
+                        <p class="preferential-normal-price2">仅售528元<span>节省120元</span></p>                        </a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+<!--为你推荐-->
+<div class="recommend-for-your">
+    <h2>为你推荐</h2>
+    <a class="preferential-subarea-more" href="#">查看全部>></a>
+    <div class="recommend-big">
+        <a href="#" target="_blank"><img src="Picture/1461147385518517881.jpg" alt=""></a>
+    </div>
+
+    <div class="etui-right">
+        <ul>
+            <li class="preferential-normal ">
+                <a href="#" target="_blank">
+                    <img src="Picture/1461147637711693353.png">
+                    <p class="preferential-normal-title">红辣椒Note3</p>
+                    <p class="preferential-normal-introduce">性能：强势配置，无与争锋</p>						<p class="preferential-normal-price3">308334人推荐</p>
+                </a>
+            </li>
+            <li class="preferential-normal ">
+                <a href="#" target="_blank">
+                    <img src="Picture/1461147734544314812.png">
+                    <p class="preferential-normal-title">红辣椒任性版+</p>
+                    <p class="preferential-normal-introduce">性价比：国民手机旗舰版</p>						<p class="preferential-normal-price3">904141人推荐</p>
+                </a>
+            </li>
+            <li class="preferential-normal ">
+                <a href="#" target="_blank">
+                    <img src="Picture/1461147854365950814.png">
+                    <p class="preferential-normal-title">红辣椒国民猴赛雷</p>
+                    <p class="preferential-normal-introduce">你的4G+手机</p>						<p class="preferential-normal-price3">904141人推荐</p>
+                </a>
+            </li>
+            <li class="preferential-normal second-line">
+                <a href="#" target="_blank">
+                    <img src="Picture/1461147956366424121.png">
+                    <p class="preferential-normal-title">红辣椒XM双4G</p>
+                    <p class="preferential-normal-introduce">高颜值+高性能+低价格</p>						<p class="preferential-normal-price3">118031人推荐</p>
+                </a>
+            </li>
+            <li class="preferential-normal second-line">
+                <a href="#" target="_blank">
+                    <img src="Picture/1461149808990455618.png">
+                    <p class="preferential-normal-title">红辣椒全网通</p>
+                    <p class="preferential-normal-introduce">性价比高的全网通手机</p>						<p class="preferential-normal-price3">39383人推荐</p>
+                </a>
+            </li>
+            <li class="preferential-normal second-line">
+                <a href="#" target="_blank">
+                    <img src="Picture/1461149915251224979.png">
+                    <p class="preferential-normal-title">红辣椒Note3 Pro</p>
+                    <p class="preferential-normal-introduce">3+32G内存指纹机</p>						<p class="preferential-normal-price3">308334人推荐</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+
+<!--内容部分-->
+<div id="content">
+    <h2>内容</h2>
+    <ul class="ul1">
+        <li class="li_1">
+            <div class="position-div"><h3>热门内容</h3></div>
+            <ul  class="big-box" id="bigboxone">
+                <li id="first1-box">
+                    <a href="#">
+                        <div class="l_div1">
+                            <img src="Images/20160512112549_85091.png"
+                                 alt=""/>
+                        </div>
+                    </a>
+
+                    <a href="#"><p class="f-title">小辣椒社区升级新玩法——随便拍</p>
+                        <p class="f-word">即日起，为了使辣粉更好的玩转小辣椒社区，
+                            更好的找到需要的资源，小辣椒社区版块将全面升级，
+                            特教辣粉们玩转随手拍版块！</p>
+                    </a>
+                </li>
+                <li id="next1-box">
+                    <a href="#">
+                        <div class="l_div1">
+                            <img src="Images/20160429151257_62293.png"
+                                 alt=""/>
+                        </div>
+                    </a>
+
+                    <a href="#"><p class="f-title">小辣椒社区社区版主团队招募中！</p>
+                        <p class="f-word">招募！招募！招募！重要的事情说三遍！小辣椒社区招募版主，
+                            礼品多多，活动多多，想参加的赶紧行动起来吧！</p>
+                    </a>
+                </li>
+
+
+            </ul>
+
+
+            <ul class="number number1" id="numberone">
+                <li id="number1-li1" style="background-color: #FC8F0F"></li>
+                <li id="number1-li2"></li>
+            </ul>
+            <div class="arr" id="arr1">
+                <span id="leftone">&lt;</span>
+                <span id="rightone">&gt;</span>
+            </div>
+        </li>
+        <li class="li_2">
+            <div class="position-div"><h3>游戏</h3></div>
+            <ul  class="big-box" id="bigbox2">
+                <li id="first2-box">
+                    <a href="#">
+                        <div class="l_div1">
+                            <img src="Images/20151218161856_36195.jpg"
+                                 alt=""/>
+                        </div>
+                    </a>
+
+                    <a href="#"><p class="f-title">小辣椒游戏中心</p>
+                        <p class="f-word">最新，最全，最具人气
+                            游戏丰富，界面简洁，急速下载，安全稳定
+                            精选游戏每日推荐 攻略礼包发不停</p>
+                    </a>
+                </li>
+                <li id="next2-box">
+                    <a href="#">
+                        <div class="l_div1">
+                            <img src="Images/游戏2.png"
+                                 alt=""/>
+                        </div>
+                    </a>
+
+                    <a href="#"><p class="f-title">唯美仙侠3D手游-青丘狐传说</p>
+                        <p class="f-word">360度真3D大世界，全息无限制城战，自定义情缘恋爱系统，开启浪漫家园同居生活，打造唯美仙侠3DMMO手游！</p>
+                    </a>
+                </li>
+
+            </ul>
+            <ul class="number number2" id="number2">
+                <li id="number2-li1" style="background-color: #FC8F0F"></li>
+                <li id="number2-li2"></li>
+            </ul>
+            <div class="arr" id="arr2">
+                <span id="lefttwo">&lt;</span>
+                <span id="righttwo" class="right">&gt;</span>
+            </div>
+
+        </li>
+        <li class="li_3">
+            <div class="position-div"><h3>测评与视频</h3></div>
+            <ul  class="big-box" id="bigbox">
+                <ul  class="big-box" id="bigbox3">
+                    <li id="first3-box">
+                        <a href="#">
+                            <div class="l_div1">
+                                <img src="Images/1450081712638047542.jpg"
+                                     alt=""/>
+                            </div>
+                        </a>
+
+                        <a href="#"><p class="f-title">红辣椒X1外观赏析视频</p>
+                            <p class="f-word">这一代的红辣椒X1的材质和工艺都有了用心的提升，背部弧线设计增加了视觉美感，采用了传统的安卓按键设计：菜单键、HOME键</p>
+                        </a>
+                    </li>
+
+
+                </ul>
+
+            </ul>
+
+
+        </li>
+        <li class="li_4">
+            <div class="position-div"><h3>售后服务</h3></div>
+            <ul  class="big-box" id="bigbox4">
+                <li id="first4-box">
+                    <a href="#">
+                        <div class="l_div1">
+                            <img src="Images/1460966976074376982.jpg"
+                                 alt=""/>
+                        </div>
+                    </a>
+
+                    <a href="#"><p class="f-title">扫码立即享受1对1售后服务！</p>
+                        <p class="f-word">小辣椒官网微信服务号上线啦！在线客服，订单查询，最新资讯，资源下载，即时随手解决手机和订单问题！快来微信扫一扫吧！</p>
+                    </a>
+                </li>
+
+
+            </ul>
+
+        </li>
+    </ul>
+
+</div>
+
+
+<script>
+    //动画效果
+
+    var bigboxone=document.getElementById("bigboxone")
+    // console.log(bigboxone)
+    var divs=bigboxone.children;
+    var number=document.getElementById("numberone")
+    var lis=number.children;
+    var bigbox2=document.getElementById("bigbox2")
+    var  divs2=bigbox2.children;
+    var number2=document.getElementById("number2")
+    var lis2=number2.children;
+    setInterval(playNextone, 5000);
+    setInterval(playNexttow, 5000);
+
+
+    var rightone = document.getElementById("rightone");
+    var leftone=document.getElementById("leftone")
+    var righttwo=document.getElementById("righttwo")
+    var lefttwo=document.getElementById("lefttwo")
+    var pic=0;//pic表示当前应该显示的div的索引
+    var pic2=0;
+
+
+    //点击按钮的时候  ul移动到相应的位置，并且下标颜色会随之变化
+    rightone.onclick=function(){
+        playNextone();
+    };
+    leftone.onclick=function(){
+        playNextone();
+    }
+    righttwo.onclick=function(){
+        playNexttow();
+    }
+    lefttwo.onclick=function(){
+        playNexttow();
+    }
+
+    var square = 0;//表示当前应该亮起的按钮
+    var square2=0
+    function playNextone() {
+        //判断 如果是最后一张就该跳了
+        if (pic == divs.length-1) {
+            bigboxone.style.left = "0px";
+            pic =-1;
+        }
+        pic++;
+        var target = -pic * 298;
+        animate( bigboxone, target);
+
+        //按钮也要跟着走
+        //判断 如果小于最后一个按钮的索引才能++
+        if (square < lis.length - 1) {
+            square++;
+        } else {
+            square = 0;
+        }
+        //干掉所有人
+        for (var i = 0; i < lis.length; i++) {
+            //                lis[i].className = "";
+            lis[i].style.backgroundColor=""
+        }
+        //          //留下当前的
+        //olLis[square].className = " #FC8F0F";
+        lis[square].style.backgroundColor="#FC8F0F"
+    }
+    function playNexttow() {
+        //判断 如果是最后一张就该跳了
+        if (pic2 == divs2.length-1) {
+            bigbox2.style.left = "0px";
+            pic2 =-1;
+        }
+        pic2++;
+        var target = -pic2 * 298;
+        animate( bigbox2, target);
+
+        //按钮也要跟着走
+        //判断 如果小于最后一个按钮的索引才能++
+        if (square2 < lis2.length - 1) {
+            square2++;
+        } else {
+            square2 = 0;
+        }
+        //干掉所有人
+        for (var i = 0; i < lis2.length; i++) {
+            //                lis[i].className = "";
+            lis2[i].style.backgroundColor=""
+        }
+        //          //留下当前的
+        //olLis[square].className = " #FC8F0F";
+        lis2[square2].style.backgroundColor="#FC8F0F"
+    }
+
+    function animate(obj, target) {
+        clearInterval(obj.timer);
+        obj.timer = setInterval(function () {
+            var leader = obj.offsetLeft;
+
+            var step = 20;
+            step = obj.offsetLeft < target ? step : -step;
+            leader = leader + step;
+            if (Math.abs(obj.offsetLeft - target) > Math.abs(step)) {
+                obj.style.left = leader + "px";
+            } else {
+                obj.style.left = target + "px";
+                clearInterval(obj.timer);
+            }
+        }, 15)
+    }
+</script>
+<!--底部-->
+<div class="xlj-footer footer-relative clearfix">
+    <ul class="nums clearfix">
+        <li>
+            <a href="#" rel="nofollow"> <span
+                    class="nums1"></span> <strong> <label>7天</label> 退货保障 </strong> </a>
+        </li>
+        <li>
+            <a href="#" rel="nofollow"> <span
+                    class="nums2"></span> <strong> <label>15天</label> 换货承诺 </strong> </a>
+        </li>
+        <li>
+            <a href="#" rel="nofollow"> <span
+                    class="nums3"></span> <strong> <label>49元起</label> 全场免邮费 </strong> </a>
+        </li>
+        <li class="last">
+            <a href="#" rel="nofollow"> <span
+                    class="nums4"></span> <strong> <label>200余家</label> 售后服务网点 </strong> </a>
+        </li>
+    </ul>
+    <div class="footer-links clearfix">
+        <dl class="col-links col-links-first">
+            <dt>
+                帮助中心
+            </dt>
+            <dd>
+                <a rel="nofollow" href="#">支付方式</a>
+            </dd>
+            <dd>
+                <a rel="nofollow" href="#">配送方式</a>
+            </dd>
+            <dd>
+                <a rel="nofollow" href="#">购物指南</a>
+            </dd>
+        </dl>
+        <dl class="col-links ">
+            <dt>
+                服务支持
+            </dt>
+            <dd>
+                <a rel="nofollow" href="#">相关下载</a>
+            </dd>
+            <dd>
+                <a rel="nofollow" href="#">售后政策</a>
+            </dd>
+            <dd>
+                <a rel="nofollow" href="#">物流查询</a>
+            </dd>
+        </dl>
+        <dl class="col-links ">
+            <dt>
+                小辣椒基地
+            </dt>
+            <dd>
+                <a rel="nofollow" href="#">服务网点</a>
+            </dd>
+            <dd>
+                <a rel="nofollow" href="#">品牌授权商</a>
+            </dd>
+            <dd>
+                <a rel="nofollow"
+                   href="#">线下合作零售店</a>
+            </dd>
+        </dl>
+        <dl class="col-links ">
+            <dt>
+                关于小辣椒
+            </dt>
+            <dd>
+                <a rel="nofollow" href="#">加入我们</a>
+            </dd>
+            <dd>
+                <a rel="nofollow" href="#">联系我们</a>
+            </dd>
+            <dd>
+                <a rel="nofollow" href="#">了解小辣椒</a>
+            </dd>
+        </dl>
+        <dl class="col-links ">
+            <dt>
+                关注我们
+            </dt>
+            <dd>
+                <a href="#"
+                   rel="nofollow"><span class="sina"></span>新浪微博</a>
+            </dd>
+            <dd class="kongjian">
+                <a href="#" rel="nofollow"><span
+                        class="qq"></span>腾讯微博</a>
+            </dd>
+            <dd>
+                <a href="#" rel="nofollow"> <span
+                        class="bbs"></span>官方社区</a>
+            </dd>
+        </dl>
+        <div class="col-contact">
+            <p class="phone">
+                400-166-5678
+            </p>
+            <p>
+                仅收市话费，周一至周日9:00-21:00
+            </p>
+            <a rel="nofollow" class="serive"
+               href="#"
+               target="_blank"><span></span>在线客服</a>
+        </div>
+    </div>
+    <div class="info ">
+
+        旗下网站：
+        <a href="#" target="_blank" title="小辣椒天猫店" rel="nofollow">小辣椒天猫店</a>
+        <em></em>
+        <a href="#" target="_blank" title="小辣椒电信店"
+           rel="nofollow">小辣椒电信店</a>
+        <em></em>
+        <a href="#" target="_blank" title="小辣椒京东店"
+           rel="nofollow">小辣椒京东店</a>
+        <em></em>
+        <a href="#"
+           target="_blank" title="小辣椒苏宁店" rel="nofollow">小辣椒苏宁店</a>
+        <em></em>
+        <br>
+        友情链接：
+        <a href="#" target="_blank"
+           title="新闻资讯">新闻资讯</a><em></em>
+        <a href="#" target="_blank" title="红辣椒">红辣椒</a><em></em>
+        <a href="#" target="_blank" title="中国电信">中国电信</a><em></em>
+        <a href="#" target="_blank"
+           title="小辣椒配件">小辣椒配件</a><em></em>
+        <a href="#" target="_blank" title="手机中国">手机中国</a><em></em>
+        <a href="#" target="_blank" title="性价比手机">性价比手机</a><em></em>
+        <a href="#" target="_blank" title="安卓市场">安卓市场</a><em></em>
+        <a href="#" target="_blank" title="手机之家应用">手机之家应用</a><em></em>
+        <li></li>
+        © <a href="#">小辣椒手机官网</a> 粤ICP证B2-20130549号 粤ICP备12053227号-3号
+        <p>版权所有：深圳小辣椒科技有限责任公司 </p>
+
+        <img alt="小辣椒手机官网"
+             src="Picture/footer_img.gif">
+
+    </div>
+    <div class="believe">
+        <a target="_blank" href="#"><img alt="诚信网站"
+                                         src="Picture/save.jpg"
+                                         style="border:none;"></a>
+    </div>
+</div>
+</body>
+</html>
